@@ -1,0 +1,29 @@
+?- ancestor(gustaf-vi-adolf, prins-alexander).
+true .
+
+?- brother_in_law(prins-daniel, Y).
+Y = prinsessan-madeleine 
+Y = prins-carl-philip 
+Y = christopher-o-neill 
+Y = prinsessan-sofia 
+false.
+
+?- aunt(X, prins-alexander).
+X = kronprinsessan-victoria 
+X = prinsessan-madeleine 
+false.
+
+?- nephew(carl-johan, Y).
+false.
+
+?- father_in_law(carl-xvi-gustaf, Y).
+Y = prins-daniel 
+Y = christopher-o-neill 
+Y = prinsessan-sofia 
+false.
+
+?- cousin(prins-oscar, Y).
+Y = prinsessan-leonore 
+Y = prins-nicolas 
+Y = prins-alexander 
+false.
